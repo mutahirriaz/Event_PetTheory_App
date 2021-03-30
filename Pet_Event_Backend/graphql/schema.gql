@@ -1,0 +1,21 @@
+
+
+type Event {
+    result: String!
+}
+
+type petReport {
+     email: String!
+     phoneNo: String!
+     inputOne: String!
+     inputTwo: String!
+}
+
+type Query {
+    getReport : [petReport]
+}
+
+
+type Mutation {
+    petForm(email: String!, phoneNo: String!, inputOne: String!, inputTwo: String!): Event!
+} 
