@@ -96,7 +96,7 @@ export class PetEventBackendStack extends cdk.Stack {
     mutations.forEach((mut) => {
 
       if(mut === 'petForm'){
-        let details = `\\\"email\\\": \\\"$ctx.arguments.email\\\",\\\"phoneNo\\\": \\\"$ctx.arguments.phoneNo\\\",\\\"inputOne\\\": \\\"$ctx.arguments.inputOne\\\",\\\"inputTwo\\\": \\\"$ctx.arguments.inputTwo\\\"`
+        let details = `\\\"name\\\": \\\"$ctx.arguments.name\\\",\\\"description\\\": \\\"$ctx.arguments.description\\\"`
 
         const addPetResolver = httpDs.createResolver({
           typeName: "Mutation",

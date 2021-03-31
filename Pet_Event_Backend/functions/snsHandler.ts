@@ -10,7 +10,7 @@ export const handler = async (event: PayloadType) => {
 
     try{
 
-        if(event.SnsMessage && event.customerEmail){
+        if(event.SnsMessage){
              // sending message to TOPIC ARN
             await sns.publish({
                 TopicArn: process.env.SNS_TOPIC_ARN,

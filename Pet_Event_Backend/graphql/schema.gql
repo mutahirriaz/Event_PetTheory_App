@@ -17,5 +17,5 @@ type Query {
 
 
 type Mutation {
-    petForm(email: String!, phoneNo: String!, inputOne: String!, inputTwo: String!): Event!
+    petForm(name: String!, description: String!): Event!
 } 
